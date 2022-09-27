@@ -18,6 +18,9 @@
 		D83244E828E32E11004EBC75 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83244E728E32E11004EBC75 /* Enums.swift */; };
 		D83244ED28E33634004EBC75 /* Fairies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83244EC28E33634004EBC75 /* Fairies.swift */; };
 		D83244EF28E336F7004EBC75 /* Pixies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83244EE28E336F7004EBC75 /* Pixies.swift */; };
+		D83244F128E33CF8004EBC75 /* AllFairies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83244F028E33CF8004EBC75 /* AllFairies.swift */; };
+		D83F787428E35ECC00137E2D /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F787328E35ECC00137E2D /* UIColor.swift */; };
+		D83F787628E36D0F00137E2D /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F787528E36D0F00137E2D /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		D83244E728E32E11004EBC75 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		D83244EC28E33634004EBC75 /* Fairies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fairies.swift; sourceTree = "<group>"; };
 		D83244EE28E336F7004EBC75 /* Pixies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pixies.swift; sourceTree = "<group>"; };
+		D83244F028E33CF8004EBC75 /* AllFairies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFairies.swift; sourceTree = "<group>"; };
+		D83F787328E35ECC00137E2D /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		D83F787528E36D0F00137E2D /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +78,12 @@
 				D83244E328E32D19004EBC75 /* Model */,
 				D83244E528E32D79004EBC75 /* View */,
 				D83244D628E32A23004EBC75 /* Assets.xcassets */,
-				D83244E428E32D2F004EBC75 /* Support */,
+				D83F787328E35ECC00137E2D /* UIColor.swift */,
 				D83244EC28E33634004EBC75 /* Fairies.swift */,
 				D83244EE28E336F7004EBC75 /* Pixies.swift */,
+				D83244F028E33CF8004EBC75 /* AllFairies.swift */,
+				D83244DB28E32A23004EBC75 /* Info.plist */,
+				D83244E428E32D2F004EBC75 /* Support */,
 			);
 			path = Winx;
 			sourceTree = "<group>";
@@ -91,7 +100,6 @@
 		D83244E428E32D2F004EBC75 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				D83244DB28E32A23004EBC75 /* Info.plist */,
 				D83244D328E32A22004EBC75 /* Winx.xcdatamodeld */,
 				D83244D828E32A23004EBC75 /* LaunchScreen.storyboard */,
 			);
@@ -110,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				D83244CE28E32A22004EBC75 /* ViewController.swift */,
+				D83F787528E36D0F00137E2D /* AddViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -188,11 +197,14 @@
 				D83244CF28E32A22004EBC75 /* ViewController.swift in Sources */,
 				D83244EF28E336F7004EBC75 /* Pixies.swift in Sources */,
 				D83244E228E32A86004EBC75 /* Winx.swift in Sources */,
+				D83F787628E36D0F00137E2D /* AddViewController.swift in Sources */,
 				D83244CB28E32A22004EBC75 /* AppDelegate.swift in Sources */,
 				D83244CD28E32A22004EBC75 /* SceneDelegate.swift in Sources */,
 				D83244E828E32E11004EBC75 /* Enums.swift in Sources */,
 				D83244ED28E33634004EBC75 /* Fairies.swift in Sources */,
 				D83244D528E32A22004EBC75 /* Winx.xcdatamodeld in Sources */,
+				D83244F128E33CF8004EBC75 /* AllFairies.swift in Sources */,
+				D83F787428E35ECC00137E2D /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
