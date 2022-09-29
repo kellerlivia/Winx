@@ -7,8 +7,8 @@
 
 import Foundation
 
-enum WinxState {
-    case newbie
-    case transforming
-    case transformed
+enum WinxState : Int, CaseIterable {
+    case newbie = 0
+    case transforming = 1
+    case transformed = 2
 }

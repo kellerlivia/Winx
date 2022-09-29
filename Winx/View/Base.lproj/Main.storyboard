@@ -16,63 +16,83 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Fairies" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="g3c-uD-UIo">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Fairies" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="g3c-uD-UIo">
                                 <rect key="frame" x="20" y="325" width="374" height="387"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="NA4-yy-sTp">
-                                <rect key="frame" x="20" y="241" width="374" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <segments>
-                                    <segment title="Fairies"/>
-                                    <segment title="Pixies"/>
-                                </segments>
-                                <connections>
-                                    <action selector="typeAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="PiV-dM-yeG"/>
-                                </connections>
-                            </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBM-MM-2HC">
-                                <rect key="frame" x="20" y="753" width="374" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="ADD NEW">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="addButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xTI-UV-oZh"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Fairies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQg-Jt-fqx">
-                                <rect key="frame" x="20" y="87" width="374" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="highlightedColor" red="0.062745098040000002" green="0.027450980390000001" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="CNJ-W8-NQT">
-                                <rect key="frame" x="20" y="177" width="374" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <segments>
-                                    <segment title="Newbie"/>
-                                    <segment title="Transforming"/>
-                                    <segment title="Transformed"/>
-                                </segments>
-                                <connections>
-                                    <action selector="statusAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="bZB-6i-XDX"/>
-                                </connections>
-                            </segmentedControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bx3-DE-3C2">
+                                <rect key="frame" x="20" y="753" width="374" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBM-MM-2HC">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="w7q-7O-bqr"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="ADD NEW">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xTI-UV-oZh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="tUJ-hu-H6u">
+                                <rect key="frame" x="20" y="87" width="374" height="191"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Fairies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQg-Jt-fqx">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="37"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" red="0.062745098040000002" green="0.027450980390000001" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="CNJ-W8-NQT">
+                                        <rect key="frame" x="0.0" y="77" width="374" height="38"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <segments>
+                                            <segment title="Newbie"/>
+                                            <segment title="Transforming"/>
+                                            <segment title="Transformed"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="statusAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="bZB-6i-XDX"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="NA4-yy-sTp">
+                                        <rect key="frame" x="0.0" y="154" width="374" height="38"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <segments>
+                                            <segment title="Fairies"/>
+                                            <segment title="Pixies"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="typeAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="PiV-dM-yeG"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.9670227465986394" green="0.33032900660264103" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="g3c-uD-UIo" firstAttribute="top" secondItem="tUJ-hu-H6u" secondAttribute="bottom" constant="47" id="Mw7-0q-hG6"/>
+                            <constraint firstItem="tUJ-hu-H6u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OtL-Y5-uCe"/>
+                            <constraint firstItem="tUJ-hu-H6u" firstAttribute="trailing" secondItem="g3c-uD-UIo" secondAttribute="trailing" id="W4i-xx-Any"/>
+                            <constraint firstItem="tUJ-hu-H6u" firstAttribute="leading" secondItem="g3c-uD-UIo" secondAttribute="leading" id="b4J-fK-iYw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tUJ-hu-H6u" secondAttribute="trailing" constant="20" id="cMp-Ns-8oh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bx3-DE-3C2" secondAttribute="bottom" constant="39" id="dNX-IS-upr"/>
+                            <constraint firstItem="tUJ-hu-H6u" firstAttribute="leading" secondItem="bx3-DE-3C2" secondAttribute="leading" id="h4w-XR-6D2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bx3-DE-3C2" secondAttribute="trailing" constant="20" id="jEU-PF-LNq"/>
+                            <constraint firstItem="tUJ-hu-H6u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="kdM-VH-Lyh"/>
+                            <constraint firstItem="bx3-DE-3C2" firstAttribute="top" secondItem="g3c-uD-UIo" secondAttribute="bottom" constant="41" id="rAP-nk-CrT"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="textView" destination="g3c-uD-UIo" id="j8j-1Q-XfL"/>
@@ -106,6 +126,9 @@
                                     <segment title="Fairies"/>
                                     <segment title="Pixies"/>
                                 </segments>
+                                <connections>
+                                    <action selector="changeType:" destination="d9t-dN-HPm" eventType="valueChanged" id="aFH-JP-f8g"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KfN-NA-1ti">
                                 <rect key="frame" x="38" y="95" width="28" height="15"/>
@@ -127,6 +150,9 @@
                                     <segment title="Transforming"/>
                                     <segment title="Transformed"/>
                                 </segments>
+                                <connections>
+                                    <action selector="changeStatus:" destination="d9t-dN-HPm" eventType="valueChanged" id="EHH-Rm-qPv"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFT-t8-B2N">
                                 <rect key="frame" x="37" y="630" width="37" height="15"/>
@@ -166,6 +192,9 @@
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="DRv-AW-pma">
                                 <rect key="frame" x="38" y="527" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changeNumber:" destination="d9t-dN-HPm" eventType="valueChanged" id="SDy-Fq-2a5"/>
+                                </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0x-Y9-2yN">
                                 <rect key="frame" x="140" y="527" width="42" height="29"/>
@@ -200,12 +229,16 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="addButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y7J-YQ-J1n"/>
+                                    <action selector="addButtonAction:" destination="d9t-dN-HPm" eventType="touchUpInside" id="gFl-jQ-XbV"/>
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="o4n-Qy-3Wr">
                                 <rect key="frame" x="36" y="401" width="276" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96702274659999998" green="0.33032900659999997" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="changeColor:" destination="d9t-dN-HPm" eventType="valueChanged" id="8R7-as-n4f"/>
+                                </connections>
                             </slider>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W0v-mj-YEU">
                                 <rect key="frame" x="340" y="396" width="38" height="38"/>

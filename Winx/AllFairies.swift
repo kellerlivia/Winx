@@ -18,22 +18,22 @@ class AllFairies {
         allArray = Array <Winx> ()
         
         let f1 = Fairies (inpName: "Tecna",
-                       inpPower: 100,
+                          inpPower: 10,
                           inpColor: UIColor.purple,
                           inpStatus: WinxState.transformed)
         
         let f2 = Fairies (inpName: "Flora",
-                       inpPower: 90,
+                          inpPower: 9,
                           inpColor: UIColor.green,
                           inpStatus: WinxState.transforming)
         
         let f3 = Fairies (inpName: "Laila",
-                       inpPower: 75,
+                          inpPower: 7,
                           inpColor: UIColor.brown,
                           inpStatus: WinxState.newbie)
         
         let f4 = Pixies (inpName: "Digit",
-                       inpPower: 100,
+                         inpPower: 10,
                          inpColor: UIColor.blue,
                          inpStatus: WinxState.transformed)
         
